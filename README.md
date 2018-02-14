@@ -4,7 +4,7 @@ This extension allows Pipe to record the screen when using Chrome if permission 
 
 To use it you will fist need to modify the existing `manifest.json` file and add your own domain so that the screen can be recorded when the Pipe HTML5 client is accessed from your domain.
 
-# How to modify?
+# How to Modify the Extension?
 
 1. Download the [ZIP](https://github.com/addpipe/screen-recording-chrome-extension/archive/master.zip) file and unzip it.
 2. Open `manifest.json` with your favorite text editor.
@@ -22,7 +22,7 @@ After you've modified it, save it and ZIP the entire downloaded directory.
 
 Next up you will need to publish it to the Google App Store
 
-# How to publish the extension
+# How to Publish the Extension
 
 1. ZIP the entire download directory with the modified `manifest.json` file if you haven't done so already
 2. Go to the [Google Developer DashBoard](https://chrome.google.com/webstore/developer/dashboard)
@@ -42,7 +42,7 @@ When you publish your extension, you’ll get an **extension ID**. This ID can a
 
 **This ID is important because you will need to add it to your Pipe embed code to activate the Screen Recording feature.**
 
-# How to activate it
+# How to Activate Pipe Screen Recording
 
 1. Go to your webpage where you have the Pipe client embeded
 2. Add the following parameter to the `flashvars` object: `srec:"YOUR_EXTENSION_ID"`
@@ -57,7 +57,7 @@ var flashvars = {qualityurl: "avq/720p.xml", accountHash:"2044b9efe653249c4081a7
 Save the changes and you should see the Record Screen Button appear in the Pipe Client:
 ![Pipe Screen Recording](https://addpipe.com/img_doc/screen-recording.png)
 
-# Support and recommandations
+# Support and Recommandations
 
 1. Screen recording only works in Chrome over secure origins (HTTPS).
 2. To make use of it you will have to use the HTML5 Pipe client.
