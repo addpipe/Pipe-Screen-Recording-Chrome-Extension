@@ -57,7 +57,7 @@ var flashvars = {qualityurl: "avq/720p.xml", accountHash:"2044b9efe653249c4081a7
 Save the changes and you should see the Record Screen Button appear in the Pipe Client:
 ![Pipe Screen Recording](https://addpipe.com/img_doc/screen-recording.png)
 
-# Support and Recommandations
+# Support and Recommendations
 
 1. Screen recording only works in Chrome over secure origins (HTTPS).
 2. To make use of it you will have to use the HTML5 Pipe client.
