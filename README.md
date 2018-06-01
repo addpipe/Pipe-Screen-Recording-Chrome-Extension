@@ -44,13 +44,47 @@ When you publish your extension, you’ll get an **extension ID**. This ID can a
 
 # How to Activate Pipe Screen Recording
 
+Embed Code 1.0
+
 1. Go to your webpage where you have the Pipe client embeded
 2. Add the following parameter to the `flashvars` object: `srec:"YOUR_EXTENSION_ID"`
 3. It should look similar to the following:
 
 ```
 
-var flashvars = {qualityurl: "avq/720p.xml", accountHash:"2044b9efe653249c4081a749a877413", payload:'{"userId":"55a95eeb936dd30100e0aff6","jobId":"55a7e6555f1bdc010014d6a1"}', eid:1, showMenu:"true", mrt:120,sis:0,asv:1, srec:"YOUR_EXTENSION_ID"};
+var flashvars = {qualityurl: "avq/720p.xml", accountHash:"YOUR_ACCOUNT_HASH", payload:'{"userId":"55a95eeb936dd30100e0aff6","jobId":"55a7e6555f1bdc010014d6a1"}', eid:1, showMenu:"true", mrt:120,sis:0,asv:1, srec:"YOUR_EXTENSION_ID"};
+
+```
+
+Embed Code 2.0 HTML
+
+1. Go to your webpage where you have the Pipe client embeded
+2. Add the `pipe-srec="YOUR_EXTENSION_ID"` attribute to the `piperecorder` tag
+3. It should look similar to the following:
+
+```
+<piperecorder id="test-div" pipe-width="640" pipe-height="510" pipe-qualityurl="avq/480p.xml" pipe-accountHash="YOUR_ACCOUNT_HASH" pipe-eid="1" pipe-showMenu="true"  pipe-srec="YOUR_EXTENSION_ID"></piperecorder>
+
+```
+
+Embed Code 2.0 JavaScript
+
+1. Go to your webpage where you have the Pipe client embeded
+2. Add the `srec:"YOUR_EXTENSION_ID"` property to your custom JavaScript object
+3. It should look similar to the following:
+
+```
+var myCustomObject = {
+size: {width:640,height:390},
+qualityurl: "avq/720p.xml", 
+accountHash:"YOUR_ACCOUNT_HASH", 
+payload:'{"userId":"55a95eeb936dd30100e0aff6","jobId":"55a7e6555f1bdc010014d6a1"}', 
+eid:1, 
+showMenu:"true", 
+srec:"YOUR_EXTENSION_ID"
+};
+
+PipeRecorder.insert('MY_DIV_ID', myCustomObject);
 
 ```
 
