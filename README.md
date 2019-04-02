@@ -1,3 +1,6 @@
+# Deprecation Update
+Starting with Chrome 72, standards compliant screen capture was rolled out, therefore the Chrome extension has been deprecated
+
 # Pipe Screen Recording Chrome Extension
 
 This extension allows Pipe to record the screen when using Chrome if permission is allowed.
