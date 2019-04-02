@@ -1,5 +1,5 @@
 # Update
-Starting with **Chrome 72**, standards compliant screen capture was rolled out, therefore the **Chrome extension has been deprecated**.
+Starting with **Chrome 72**, [standards compliant screen capture was rolled out](https://blog.addpipe.com/standards-compliant-screen-capture-in-chrome-72/), therefore the **Chrome extension has been deprecated**.
 
 # Pipe Screen Recording Chrome Extension
 
